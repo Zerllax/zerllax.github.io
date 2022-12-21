@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/29ef157e4f.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+    <link rel="icon" href="images/ZerlaxPB.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js"></script>
+    <title>Zerlax | Home</title>
+</head>
+
+
+<body>
+<!-- Navbar -->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="projects.html">Projects</a>
+  </div>
+  
+  <div id="main">
+    <img src="/images/Zerlax-PB-Trans-With-Shadow.png" style="position: absolute; top: 0; right: 0; width: 100px; height: 100px;" oncontextmenu="return false;">
+    <span style="font-size:45px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  </div>
+  <!-- Navbar -->
+
+<!-- Maintext -->
+<div class="maintext">
+  <h2>
+    Zerlax
+  </h2>
+</div>
+<!-- Maintext -->
+
+<!-- Down Scroll Button -->
+<a href="#down"><span></span></a>
+</section>
+<section id="down" class="demo">
+<a><span></span></a>
+</section>
+<!-- Down Scroll Button END -->
+
+
+<div class="wrapper">
+  <div class="typing-demo">
+    Scroll down for more Information.
+  </div>
+</div>
+
+
+<!-- Div with image -->
+<img id="my-image" src="images/wallpaper/blob.png" style="width: 100%;" alt="Div Image">
+
+<div class="myDiv">
+  <h2>Wallpaper Remake</h2>
+  <p>These Wallpaper are created by <a href="https://discord.gg/YbyZVJEDfm" target="_blank">LAW</a> I have simply added more pictures in different colors</p>
+  <img src="/images/wallpaper/CleanDark_White.png" style="width:20%" oncontextmenu="return false;">
+  <img src="/images/wallpaper/CleanLight_White.png" style="width:20%" oncontextmenu="return false;">
+  <img src="/images/wallpaper/SmoothDark_White.png" style="width:20%" oncontextmenu="return false;">
+  <img src="/images/wallpaper/SmoothLight_White.png" style="width:20%" oncontextmenu="return false;">
+  <a class="button1" href="https://www.mediafire.com/file/hsj7y2hs0qjjpgz/L+%CE%9B+W+-+Wallpapers+-+Remake+%28Zerlax%29.zip" target="_blank">Download Wallaper</a>
+</div>
+<!-- Div with image -->
+
+
+
+<img id="my-image-3" src="images/wallpaper/blob-3.png" style="width: 100%;" alt="Div Image">
+<video autoplay muted loop id="back-video">
+  <source src="images/wallpaper/By Zerlax2.mp4" type="video/mp4">
+</video>
+
+
+<!-- Div1 with image -->
+<img id="my-image-2" src="images/wallpaper/blob-2.png" style="width: 100%;" alt="Div Image">
+
+<div class="myDiv1">
+  <h2>My Osu Skin</h2>
+  <p>Created By Zerlax with some other skins</p>
+  <img src="/images/wallpaper/Osu-1.jpg" style="width:28%" oncontextmenu="return false;">
+  <img src="/images/wallpaper/Osu-2.jpg" style="width:28%" oncontextmenu="return false;">
+  <img src="/images/wallpaper/Osu-3.png" style="width:28%" oncontextmenu="return false;">
+  <a class="button2" href="https://www.mediafire.com/file/gxhcyw8r7kjbr4d/Zerlax_-_Mitsuha_V3.0.osk/file" target="_blank">Download Zerlax - Mitsuha V3.0</a>
+</div>
+<!-- Div1 with image -->
+
+
+
+
+<div class="footer">
+  <a href="https://twitter.com/Zerlax_" target="_blank">Twitter</a>
+  <a href="https://www.twitch.tv/zerlax___" target="_blank">Twitch</a>
+  <a href="https://www.youtube.com/channel/UCQPNMviWUdnyRvgTLdFMoZQ" target="_blank">YouTube</a>
+  <a href="https://discord.gg/yGgp4uECJy" target="_blank">Discord</a>
+  <a href="https://steamcommunity.com/id/Zerlax_/" target="_blank">Steam</a>
+  <a href="#" class="top-link"><i class="fa fa-arrow-up"></i> Go Up</a>
+</div>
+
+
+
+<!-- Loading Page -->
+<div id="loading-page">
+  <div class="spinner"></div>
+</div>
+
+
+
+<script>
+  $(window).scroll(function() {
+  var footer = $('.footer'); // Footer element
+  var footerTop = footer.offset().top; // Top position of footer
+  var windowTop = $(window).scrollTop(); // Current vertical scroll position
+  var windowHeight = $(window).height(); // Height of visible part of window
+  var documentHeight = $(document).height(); // Total height of document
+
+  // If footer is not within visible part of window
+  if (footerTop > (windowTop + windowHeight) || (windowTop + windowHeight) > documentHeight) {
+    footer.css('display', 'none'); // Hide footer
+  } else {
+    footer.css('display', 'block'); // Show footer
+  }
+});
+
+</script>
+
+<script>
+  function loadGallery() {
+    document.getElementById('loading-page').style.display = 'none';
+    document.getElementsByClassName('row').style.display = 'block';
+  }
+
+  window.onload = function() {
+    loadGallery();
+  };
+</script>
+<!-- Loading Page -->
+
+
+<!-- Navbar Animation -->
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.3)";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+  }
+  </script>
+<!-- Navbar Animation -->
+
+
+</body>
+
+</html>
