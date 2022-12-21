@@ -79,6 +79,7 @@ body{
   -ms-flex-wrap: wrap; /* IE 10 */
   flex-wrap: wrap;
   padding: 0 4px;
+margin-bottom: 120px;
 }
 
 /* Create two equal columns that sits next to each other */
